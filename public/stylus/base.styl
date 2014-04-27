@@ -1,0 +1,148 @@
+/* HTML5 元素重置 */
+footer, header, hgroup, nav, section
+  display: block
+
+/* Base */
+/*
+ * 1. 避免在使用 CSS3 Transitions 时页面重绘引发的闪动
+ * 2. 允许字号小于 12px
+ */
+html
+  font-family: sans-serif
+  -webkit-backface-visibility: hidden
+  -webkit-text-size-adjust: none
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,
+pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td
+  margin 0
+  padding 0
+
+fieldset, image
+  border 0
+
+address, caption, cite, code, dfn, em, strong, th, var
+  font-style normal
+  font-weight normal
+
+ol, ul
+  list-style none
+
+
+/* Forms */
+button, input
+  font-family: inherit
+  font-size: 100%
+  margin: 0
+
+
+button,
+html input[type="button"], input[type="submit"], input[type="search"]
+  -webkit-appearance: none
+
+
+/* 移除 OS X 中 Safari 5 和 Chrome 内部的内边距以及搜索框的取消按钮 */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration
+  -webkit-appearance: none
+
+/* Common */
+body
+  min-width 320px
+  background #FFFFFF
+  font 14px 'Hiragino Sans GB', 'Hiragino Sans GB W3', 'Microsoft YaHei', '微软雅黑', tahoma, arial, simsun, '宋体'
+
+
+h2, h3
+  margin 0
+  font-size 14px
+  font-weight normal
+
+
+ul, dl, dd
+  margin 0
+  padding 0
+  list-style none
+
+
+a
+  text-decoration none
+  color #333
+
+
+.pr
+  position relative
+
+.dis-b
+  display block
+.dis-l
+  display inline
+.dis-lb
+  display inline-block
+
+.hide
+  display none!important
+
+/* font-size */
+.fs10
+  font-size 10px
+.fs12
+  font-size 12px
+.fs16
+  font-size 16px
+.fs18
+  font-size 18px
+
+/* padding */
+.ptop1
+  padding-top 1px
+.ptop5
+  padding-top 5px
+.ptop10
+  padding-top 10px
+.pleft10
+  padding-left 10px
+
+.ptb5
+  padding 5px 0
+
+/* margin */
+.mtop2
+  margin-top 2px
+.mtop5
+  margin-top 5px
+.mtop10
+  margin-top 10px
+.mtop15
+  margin-top 15px
+.mleft5
+  margin-left 5px
+.mright5
+  margin-right 5px
+
+.float-r
+  float right
+.float-l
+  float left
+
+.font-blue
+  color #CA2121
+
+.font-gray
+  color #888
+
+
+.pos-rel
+  position relative
+
+.breakword
+  word-break break-all
+
+.bold
+  font-weight bold
+
+.ovf-h
+  overflow hidden
+
+.tex-cent
+  text-align center
+
