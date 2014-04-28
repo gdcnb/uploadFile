@@ -23,14 +23,15 @@
         var xhr = new XMLHttpRequest();
         var fd = new FormData();
 
+        fd.append('enctype', 'multipart/form-data');
         fd.append('fileToUpload', $('#fileToUpload')[0].files[0]);
 
-        /* event listners */
+        // event listners
         xhr.upload.addEventListener("progress", uploadProgress, false);
         xhr.addEventListener("load", uploadComplete, false);
         xhr.addEventListener("error", uploadFailed, false);
         xhr.addEventListener("abort", uploadCanceled, false);
-        /* Be sure to change the url below to the url of your upload server side script */
+        //Be sure to change the url below to the url of your upload server side script
         xhr.open("POST", "/upload");
         xhr.send(fd);
 

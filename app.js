@@ -17,6 +17,7 @@ app.set('view engine', 'jade');
 app.set('port', process.env.PORT || 5005);
 
 app.use(favicon());
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
